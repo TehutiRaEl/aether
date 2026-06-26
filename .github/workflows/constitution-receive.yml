@@ -1,7 +1,11 @@
 name: Constitution Receive
+
 on:
   repository_dispatch:
     types: [constitution_update]
+
+permissions:
+  contents: write
 
 jobs:
   sync-constitution:
@@ -14,7 +18,7 @@ jobs:
       - name: Download soul.md from Queen
         run: |
           curl -fsSL \
-            "https://raw.githubusercontent.com/tehutirael/sovereign-hive-meta/main/soul.md" \
+            "https://raw.githubusercontent.com/TehutiRaEl/-sovereign-hive-meta/main/soul.md" \
             -o /tmp/soul_new.md
 
       - name: Commit if changed
