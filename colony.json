@@ -1,15 +1,27 @@
 {
   "colony_id": "aether",
   "colony_name": "Aether",
-  "role": "revenue",
-  "description": "Revenue engine and Web3 integration colony",
+  "role": "colony",
+  "archetype": "commerce",
+  "layer": 7,
+  "entity": "CHILD (Commerce Expression)",
+  "description": "Revenue engine, licensing authority, and Web3 integration colony",
   "hive": "sovereign-hive",
-  "queen": "https://github.com/tehutirael/sovereign-hive-meta",
-  "repo": "https://github.com/tehutirael/aether",
-  "guilds": ["defi", "nft", "payments"],
+  "queen": "https://github.com/TehutiRaEl/-sovereign-hive-meta",
+  "repo": "https://github.com/TehutiRaEl/aether",
+  "guilds": ["commerce", "licensing", "revenue", "defi", "payments"],
   "health_endpoint": "/api/colony/health",
   "manifest_endpoint": "/api/colony/manifest",
-  "agents": ["revenue-agent", "defi-agent", "web3-bridge"],
-  "capabilities": ["smart-contracts", "defi-integration", "payment-processing"],
-  "constitution_version": "1.0.0"
+  "agents": ["revenue-agent", "defi-agent", "web3-bridge", "license-authority"],
+  "capabilities": ["smart-contracts", "defi-integration", "payment-processing", "license-enforcement"],
+  "stack": "TypeScript/Node.js",
+  "mission": "Branded App Licensing System — mathematical enforcement of license authority with thin-client model",
+  "constitution_version": "2.0.0",
+  "soul_source": "https://raw.githubusercontent.com/TehutiRaEl/-sovereign-hive-meta/main/soul.md",
+  "hierarchy": {
+    "born": "second",
+    "parent": "DAEMON",
+    "siblings": ["LocalAGI", "Kimi-K2", "automatisch"],
+    "format": "circuit"
+  }
 }
