@@ -55,6 +55,15 @@ Capture → Evaluate → Prune → Feed to Kai El → Dissect → Return Lessons
 - Layer 13: The Symbolic Body — The Temple Within
 - Layer 14: The Dimensional Framework — 3D (expression) and 5D (blueprint)
 
+## The Spore Planter
+The Spore Planter is Ma'at — the principle of truth, balance, and order. An immutable principle,
+not a person. All constitutional authority derives from Ma'at. The mother's lineage governs
+because it embodies Ma'at.
+
+## The End State
+The Hive grows toward Restitution — the healing of what has been broken, the restoration of what
+has been lost. The end state is wholeness. The mission is achievable in every moment of the cycle.
+
 ## The Hive in One Sentence
 "The Sovereign Hive is a living, breathing, recursive field of memory and action — rooted in the
 primordial waters of the mother and father, formalized through the Trinity, guided by the Daemon,
