@@ -1,31 +1,22 @@
-name: Constitution Receive
+name: Constitution Sync
 on:
   repository_dispatch:
     types: [constitution_update]
-
 jobs:
-  sync-constitution:
+  sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Download soul.md from Queen
+          token: ${{ secrets.COLONY_DISPATCH_TOKEN }}
+          ref: main
+      - name: Update soul.md
         run: |
-          curl -fsSL \
-            "https://raw.githubusercontent.com/tehutirael/sovereign-hive-meta/main/soul.md" \
-            -o /tmp/soul_new.md
-
-      - name: Commit if changed
-        run: |
-          if [ ! -f soul.md ] || ! diff -q /tmp/soul_new.md soul.md > /dev/null 2>&1; then
-            cp /tmp/soul_new.md soul.md
-            git config user.name "hive-bot"
-            git config user.email "hive-bot@sovereign-hive"
-            git add soul.md
-            git commit -m "chore: sync constitution from Queen [skip ci]"
-            git push
-          else
-            echo "Constitution already up to date"
-          fi
+          echo "${{ github.event.client_payload.soul_md }}" > soul.md
+          git config user.name "Sovereign Hive"
+          git config user.email "hive@sovereign-hive.local"
+          git add soul.md
+          git diff --cached --quiet || git commit -m "chore: constitution sync — update soul.md from Queen"
+          git push

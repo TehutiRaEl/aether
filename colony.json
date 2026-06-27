@@ -1,15 +1,18 @@
 {
   "colony_id": "aether",
   "colony_name": "Aether",
-  "role": "revenue",
-  "description": "Revenue engine and Web3 integration colony",
+  "role": "colony",
+  "archetype": "commerce",
+  "layer": 7,
+  "entity": "CHILD (Commerce Expression)",
+  "guilds": ["commerce", "licensing", "revenue"],
   "hive": "sovereign-hive",
-  "queen": "https://github.com/tehutirael/sovereign-hive-meta",
-  "repo": "https://github.com/tehutirael/aether",
-  "guilds": ["defi", "nft", "payments"],
+  "queen": "https://github.com/TehutiRaEl/-sovereign-hive-meta",
+  "version": "1.0.0",
+  "port": 3000,
   "health_endpoint": "/api/colony/health",
+  "info_endpoint": "/api/colony/info",
   "manifest_endpoint": "/api/colony/manifest",
-  "agents": ["revenue-agent", "defi-agent", "web3-bridge"],
-  "capabilities": ["smart-contracts", "defi-integration", "payment-processing"],
-  "constitution_version": "1.0.0"
+  "events_endpoint": "/api/colony/events",
+  "agents_endpoint": "/api/colony/agents"
 }
