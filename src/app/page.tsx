@@ -1,22 +1,11 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'License Authority Server',
-  description: 'Cryptographic license enforcement and revenue split authority',
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function Home() {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
+      <h1>License Authority Server</h1>
+      <p>Cryptographic license enforcement and revenue split authority.</p>
+      <p>
+        Colony status: <a href="/api/colony/health">/api/colony/health</a>
+      </p>
+    </main>
   )
 }
