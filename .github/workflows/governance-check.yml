@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
-      - name: Check PR title for [ROLE: ...] tag
+      - name: "Check PR title for [ROLE: ...] tag"
         run: |
           MSG="${{ github.event.pull_request.title }}"
           if ! echo "$MSG" | grep -qE '\[ROLE: [^]]+\]'; then
