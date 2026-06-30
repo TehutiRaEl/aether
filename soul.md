@@ -1,10 +1,3 @@
-# Soul — Aether Colony
-> Commerce colony. Layer 7 child. Revenue & licensing expression.
-> Constitution received from: https://github.com/TehutiRaEl/-sovereign-hive-meta
-> Last sync: managed by constitution-receive.yml
-
----
-
 # SOUL.MD — The Sovereign Constitution of Kai El
 
 ## Preamble
