@@ -43,12 +43,11 @@ jobs:
 
       - name: Build
         run: npm run build
-        continue-on-error: true
         env:
           # Provide stub env vars so Next.js build doesn't fail on missing config
           STRIPE_SECRET_KEY: "sk_test_stub"
           NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: "pk_test_stub"
-          JWT_SECRET: "ci-stub-secret-do-not-use-in-production"
+          LICENSE_SECRET: "ci-stub-secret-do-not-use-in-production-32chars"
           DATABASE_PATH: "/tmp/aether-ci.db"
 
       - name: Colony route type check
