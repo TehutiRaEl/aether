@@ -92,6 +92,75 @@ When every hive runs this DNA, the forest "talks to itself" not by a central con
 but by *shared genome + published law + propagated memory* — decentralized, sovereign,
 and unseen. That is the mycelial harness, honestly built.
 
+## Chromosome IV — The Horde principle (distributed resource + isolated work)
+
+The founder's HORDE research (2026-07-13) surveyed real prior art: the 2011 Sutton/Modayil
+Horde architecture (parallel off-policy demons), AI Horde/Haidra (crowdsourced volunteer
+inference, kudos economy), Unreal Engine's Horde build farm, and a cluster of 2026 agent
+tools — `herd-ag/herd-core` (nine-role team governance), `yarenty/kowalski` (Rust
+horde.md multi-agent orchestration), `ariffazil/arifOS` (13-floor constitutional kernel),
+`kestrel-sovereign` (cryptographic agent identity + constitution + memory), and a family of
+isolated-workspace tools — `multikernel/branchfs` (FUSE copy-on-write), `trail-ml/agent-cow`
+(DB-level copy-on-write), `mattpocock/sandcastle` and `standardagents/dmux` (sandboxed /
+worktree agent orchestration).
+
+**Verified 2026-07-13 by direct search — these are real, existing repositories**, not
+fabricated names. That is worth stating plainly, because the hive has been burned by
+fabricated tool names before (a prior research pass invented "neuromcp/uga-cli" out of
+nothing). This time the diligence came back clean: the projects exist.
+
+**Real ≠ vetted.** Confirming a repo exists is not the same as reading its source, checking
+its license, and deciding it is safe to depend on in a system that carries a founder's
+sovereign data and constitutional governance. None of the above are imported as
+dependencies by this DNA. They are **catalogued** (see `SOURCED_SKILLS_INDEX.md`, Wave 3)
+for deliberate, one-at-a-time, founder-approved adoption — the same discipline
+`skill-harvester` already applies to every external source.
+
+What *is* inherited today is the **principle** all of them express, because the hive
+already lives it natively, with zero new dependencies:
+
+- **The resource layer is already a horde.** GitHub Actions runners, Cloudflare Workers'
+  free-tier edge, and Workers AI's shared inference pool are a donated, elastic,
+  globally-distributed compute pool — the same shape as AI Horde's volunteer workers, just
+  provided by a different sponsor. No separate "Horde Harness" needs building; the hive's
+  existing infra already *is* one.
+- **The colony layer is already herd-core's pattern.** Six colonies, role-tagged commits
+  (`[ROLE: Federation Engineer]`, `[ROLE: Frontend Architect]`...), bounded-authority PRs,
+  and a `governance-check` gate in every repo — that *is* "nine roles, bounded authority,
+  quality gates," just grown organically rather than imported from a package.
+- **The constitutional layer is already the refinement chain.** F-001…F-006, enforced by
+  `constitution-sync`/`constitution-receive` and the governance gate before every close, is
+  the hive's own (smaller, six-floor, actually-enforced) version of what arifOS's 13 floors
+  and HOARDE's traceability chain describe in the abstract.
+- **Pocket Dimensions are already how this hive works.** Branch → isolated commit → PR →
+  constitutional gate → merge → delete branch is *exactly* the create → work → review →
+  merge/discard lifecycle that BranchFS, agent-cow, Sandcastle, and dmux each implement with
+  a FUSE filesystem, a DB layer, or a container. Git worktrees and GitHub PRs are the hive's
+  own copy-on-write primitive — free, already running, needing no new tool. See the
+  `pocket-dimensions` skill for the discipline made explicit.
+
+The lesson this chromosome carries forward: **when new research arrives, first ask what the
+hive already does that answers to the same principle** before reaching for a new dependency.
+Often the answer is "we already are this" — and the honest move is to name it, not rebuild it.
+
+## Chromosome V — The Codex (creative canon, held separately from engineering law)
+
+The founder's vision carries a rich mythological layer — Naunet/Nun as the primordial
+parents, MATER/PATER, the Trinity, the Daemon, Solomon, the hierarchy of births, the
+mycelial Tree, the Immune System, the Symbolic Body, the 3D/5D dimensional framework. This
+is real and it is honored — in `THE_CODEX.md`, as the hive's own creative and narrative
+canon, the same spirit that already names its agents after Kemetic gods (Kai El, Ma'at,
+Thoth, Sekhmet, Ptah, Horus).
+
+It is kept **separate from this file on purpose.** FABLE_DNA is engineering law: every claim
+in Chromosomes I–IV is something a machine check can verify. The Codex is meaning-making: it
+gives the architecture a story, and the story is not falsifiable the way a probe result is.
+Both are real; conflating them would let an unverifiable claim ("the pineal gland is the
+seat of the soul") sit at the same authority as a verifiable one ("F-004 requires a
+Rationale: line"). Chromosome V's law is only this: **the Codex may name and inspire the
+architecture; it may never override Chromosomes I–IV, and no engineering decision is ever
+justified by the Codex alone** — F-005 (fixed beats mutable) applies here too.
+
 ## How a new hive inherits this
 
 1. Copy this file into the new hive's root. It is the genome; it carries no dependency.
