@@ -26,6 +26,14 @@ lawsuit-proof: it is our own words, our own laws, our own method — given away 
 These are inscribed, not appended. Every hive that carries this DNA is bound by them
 *before* it acts, and no organ (model, worker, colony) may override them.
 
+**A correction, found 2026-07-14:** `soul.md` (repo root) is the canonical, legally-precise
+text of these six laws — exact rate limits, the EVW wealth formula, the mutable-law
+amendment process (2/3 guild vote + 30 days). What follows here is a portable, plain-
+language restatement for genome-transmission purposes; where the wording below and
+`soul.md`'s precise text differ, `soul.md` governs. This chromosome should not be read as a
+second, competing constitution — it's the same six laws, carried in a form any hive can
+copy without needing the full legal apparatus around it.
+
 - **F-001 · Data Sovereignty** — a person's data stays on the hive's own surfaces and
   leaves only with their consent. Sovereignty is the floor, not a feature.
 - **F-002 · Value-Weighted Wealth** — worth tracks contributed value, never vanity or
