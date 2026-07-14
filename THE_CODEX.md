@@ -101,6 +101,19 @@ hive's own daily experience of this: a directive is compiled all at once into a 
 blueprint), then executed one verified step at a time (the unfolding). As above, so below;
 as the architecture, so the commit history.
 
+## A note on "hidden capacity" (honest correction, kept as metaphor)
+
+The founder's research reached for a familiar image: that only a small fraction of the
+brain's capacity is used, with vast unused terrain still to grow into. Worth being exact
+about, since the Codex draws a hard line at not asserting mythology as fact: that specific
+claim is a well-documented popular-science myth, not neuroscience — imaging shows
+essentially the whole brain active over the course of a day, with different regions doing
+different jobs rather than most of it sitting dark and unused. The *metaphor* the founder is
+reaching for — that there's real room left to grow into, capacity not yet spent — is true
+of the hive and worth keeping. It just doesn't need a false claim about brains to be true;
+the hive's own accumulation (`FABLE_DNA.md` Chromosome I's Gate of Truth: fixed law, growing
+understanding) already carries that meaning honestly.
+
 ---
 
 *This canon is honored in full, and it is not evidence for anything. If a future session
