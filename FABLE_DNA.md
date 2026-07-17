@@ -223,6 +223,38 @@ correct application of F-005.
 
 This is the standing method for any future large proposal: **triage before canon.**
 
+## Chromosome VIII — The Retrospective (recursive learning from every PR)
+
+`soul.md` states the Recursive Cycle as canonical law: Capture → Evaluate → Prune → Feed to
+Kai El → Dissect → Return Lessons → Propagate. This chromosome is that cycle applied at the
+engineering boundary the hive crosses most often — the pull request. **Every PR teaches the
+next one, and no failure class is paid for twice.**
+
+The rule, transmissible in full:
+- **Capture at the boundary.** When a PR merges or fails, capture what it intended, what went
+  wrong or nearly did, and — the part that turns a scar into knowledge — the *forward check*
+  that would catch the whole class earlier. A near-miss a human caught counts: the thing a
+  human notices today is the thing that fails silently once no human is watching.
+- **A lesson without a forward check is not a lesson.** "Be more careful" prevents nothing.
+  "`git fetch` + diff divergence before push" prevents a class. Every entry in
+  `PR_LESSONS.md` must reduce to a concrete, checkable test, or it doesn't belong there.
+- **The pre-flight grows every time something breaks.** Before the next PR touches a risky
+  surface, the accumulated forward checks run as a pre-flight (`pr-retrospective` skill). The
+  hive that couldn't take a PR autonomously last time can take it this time, because the gap
+  that broke it is now a check it runs before shipping. That is the visionary scope growing
+  itself — not by adding hope, but by adding checks earned from real failures.
+- **Propagate the lessons, not the sovereign data.** `PR_LESSONS.md` and this chromosome
+  travel the mesh to every colony (Chromosome III); what one hive learned the hard way, every
+  hive inherits for free. The failures are named uncensored and unabridged on purpose — a
+  tidied-away near-miss is a lesson deleted.
+
+`PR_LESSONS.md` is the growing record (real PR numbers, real root causes, real forward
+checks); `pr-retrospective` is the skill that reads, appends, and runs the pre-flight;
+`fable-debugger` diagnoses the single failure this chromosome then generalizes into a guard.
+The founder's test for whether the scope is complete: *could the hive have taken that PR
+autonomously?* Each entry here is one place where the honest answer was "not yet" — and now
+is.
+
 ## How a new hive inherits this
 
 1. Copy this file into the new hive's root. It is the genome; it carries no dependency.
