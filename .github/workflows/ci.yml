@@ -23,13 +23,6 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Prepare package.json
-        run: |
-          # aether uses LAUpackage.json as its root package manifest
-          if [ -f "LAUpackage.json" ] && [ ! -f "package.json" ]; then
-            cp LAUpackage.json package.json
-          fi
-
       - name: Install dependencies
         run: npm ci --prefer-offline || npm install
 
