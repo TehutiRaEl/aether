@@ -1,0 +1,39 @@
+Sovereign Hive Internal License
+
+Copyright (c) 2026 TehutiRaEl. All rights reserved.
+
+This repository is original work authored for the Sovereign Hive federation
+(https://github.com/TehutiRaEl/-sovereign-hive-meta) and is not licensed for
+external use, copying, modification, or redistribution by default.
+
+GRANT — federation-internal use:
+Permission is granted, free of charge, to use, copy, modify, merge, and
+redistribute this software WITHIN any repository that is a member of the
+TehutiRaEl Sovereign Hive federation (identified by carrying the shared
+constitution layer — soul.md, FABLE_DNA.md, colony.json, or an equivalent
+signed manifest naming "sovereign-hive" as its hive) — for the purpose of
+federation integration, operation, and the hive's own commerce-under-law
+activities as governed by soul.md and PERMISSIONS.md.
+
+This grant does NOT extend to any party or repository outside that
+federation. No rights are granted to distribute this software, in whole or
+in part, to the public, to sell it, or to sublicense it outside the
+federation, without separate, explicit, written permission from the
+copyright holder.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF,
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Written 2026-07-22 to close a real gap: this repo, and its sibling colonies
+4DBRAIN and aether, had no LICENSE file at all until now, meaning even the
+hive's own other repos had no formal grant to reuse this code across repo
+boundaries despite common authorship. This file formalizes what was already
+true in practice, and unblocks the colony_sdk consolidation and tesseract-
+math relocation work described in memory/planning/ (THEHIVE repo) without
+changing anything about who owns this code or what it may be used for
+outside the federation.

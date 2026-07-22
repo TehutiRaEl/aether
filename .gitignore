@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# production
+build/
+dist/
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# env files (never commit real secrets)
+.env
+.env.local
+.env*.local
+
+# database
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+data/
+
+# logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# editor
+.vscode/
+.idea/
