@@ -1,0 +1,22 @@
+# aether — Render blueprint (Phase H prep, 2026-07-23). Uses the existing
+# Dockerfile (Next.js standalone build, `node server.js`, port 3000).
+#
+#   1. https://dashboard.render.com → New → Blueprint → pick this repo
+#   2. Set HIVE_JWT_SECRET when prompted (same value as every other colony —
+#      src/app/api/colony/events/route.ts verifies X-Hive-Signature with it)
+#   3. You get a URL like https://aether-colony.onrender.com — paste it into
+#      the Queen's AETHER_URL env var (see THEHIVE/PHASE_H_DEPLOY.md)
+#
+# Note: aether's colony endpoints live under /api/colony/* (Next.js app
+# router), not /colony/* — the Queen-side URL mapping accounts for this;
+# see the "aether path prefix" item in PHASE_H_DEPLOY.md.
+
+services:
+  - type: web
+    name: aether-colony
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/colony/health
+    envVars:
+      - key: HIVE_JWT_SECRET
+        sync: false
