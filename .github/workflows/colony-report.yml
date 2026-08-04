@@ -1,0 +1,26 @@
+name: Colony Report to Queen
+
+# Closes the one-way loop: constitution-sync pushes law from the Queen
+# (THEHIVE) to this colony, but until now this colony had no way to tell
+# the Queen anything back. This posts a short status entry every 6 hours
+# to THEHIVE's real POST /v11/colony/report endpoint (rate-limited,
+# anti-spam only, no secret required — same posture as the Queen's other
+# public write endpoints).
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Report status to THEHIVE
+        run: |
+          LAST_COMMIT=$(git log -1 --format='%h %s' | cut -c1-200)
+          BODY=$(printf '{"colony":"aether","kind":"status","body":"alive — last commit: %s"}' "$LAST_COMMIT")
+          curl -sS -m 15 -X POST "https://thehive.sovereignhive.workers.dev/v11/colony/report" \
+            -H "Content-Type: application/json" \
+            --data "$BODY" || echo "::warning::report failed (non-fatal, never blocks this colony's own CI)"
